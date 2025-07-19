@@ -5,9 +5,9 @@
     --secondary-color: #0077B6;
     --accent-color: #03045E;
     --light-text: #FFFFFF;
-    --dark-text: #222d3d;
+    --dark-text: #2d394c;
     --dark-text-secondary: #3f4651;
-    --light-bg: #FFFFFF;
+    --light-bg: #ffffff;
     --dark-bg: #000000;
     /* --gray-bg: #E5E5E5;
     --border-color: #D3D3D3;
@@ -30,9 +30,9 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1350px;
     margin: 0 auto;
-    padding: 0 20px;     
+    padding: 0 20px;  
 }
 
 li {
@@ -83,7 +83,7 @@ a {
     /* top: 1rem; */
     width: 100%;
     margin: 1.7rem auto;    
-    /* z-index: 1;                                        */
+    /* z-index: 1; */
 }
 
 .site-header .container {
@@ -164,7 +164,7 @@ a {
     width: 100%;
 }
 
-/* Hero Secton */
+/* Hero Section */
 .hero-section {
     background-color: var(--primary-color);
     color: var(--light-text);
@@ -201,8 +201,7 @@ a {
 
 .hero-content h1 {
     margin-bottom: 1rem;
-    font-size: 3.3rem;
-
+    font-size: 3.5rem;
 }
 
 .hero-content p {
@@ -276,6 +275,146 @@ a {
 .custom-shape-divider-bottom-1752830798 .shape-fill {
     fill: #FFFFFF;
 }
+
+/* Quick Links */
+
+.quick-links { 
+    background-color: var(--light-bg);
+    margin: 2rem auto;
+    flex-wrap: wrap;
+}
+
+.quick-links .container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 26rem;
+    /* max-height: 14.7rem; */
+    text-align: left;
+    flex: 1;
+    transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.icon i {
+    background-color: #d6e5e772;
+    padding: 0.8rem 0.5rem;
+    border-radius: 1.1rem;
+}
+
+.card span {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-text);
+    font-weight: 500;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: var(--dark-text-secondary);
+    margin-bottom: 1rem;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe input {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 0.4rem 0 0 0.4rem;
+    font-size: 0.9rem;
+    flex: 1;
+}
+
+.subscribe button {
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0 0.4rem 0.4rem 0;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.subscribe button:hover {
+    background-color: #015886;
+}
+
+.btn-blue {
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.btn-blue:hover {
+    background-color: #015886;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: -2rem;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+    /* font-size: 0.95rem; */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* .card ul i {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+} */
+
+.fahouse {
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.famed {
+    color: #ff1d1d;
+    margin-bottom: 1rem;
+}
+
+.fafire {
+    color: #ffa11d;
+    margin-bottom: 1rem;
+}
+
+.card ul a {
+    text-decoration: underline;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
 
 @keyframes scrollMarquee {
     0% {
