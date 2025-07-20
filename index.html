@@ -193,6 +193,41 @@
         </div>
     </section>
 
+    <section id="events" class="calendar-section">
+        <h2 class="section-title">Upcoming Events</h2>
+        <p class="calendar-subtitle">Stay informed about upcoming events and activities in our barangay</p>
+
+        <div class="container">
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button class="nav-button" id="prevMonth">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>                        
+                    <span class="calendar-month" id="calendarMonth"></span>
+                    <button class="nav-button" id="nextMonth">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <table class="calendar-table">
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendarBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
         <script src="main.js"></script>
     </body>
 </html>
