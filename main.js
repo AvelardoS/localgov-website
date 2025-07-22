@@ -77,3 +77,36 @@
         });
 
         generateCalendar(currentDate);
+
+// Officials Pagination
+    document.addEventListener("DOMContentLoaded", () => {
+        const carousel = document.querySelector(".officials-carousel");
+        const cardWidth = document.querySelector(".official-card").offsetWidth + 16;
+
+    document.getElementById("scrollRight").addEventListener("click", () => {
+        carousel.style.transition = "transform 0.4s ease-in-out";
+        carousel.style.transform = `translateX(-${cardWidth}px)`;
+
+        setTimeout(() => {
+
+            const firstCard = carousel.children[0];
+            carousel.appendChild(firstCard);
+            carousel.style.transition = "none";
+            carousel.style.transform = "translateX(0)";
+        }, 400);
+    });
+
+    document.getElementById("scrollLeft").addEventListener("click", () => {
+        const lastCard = carousel.lastElementChild;
+        carousel.insertBefore(lastCard, carousel.firstElementChild);
+        carousel.style.transition = "none";
+        carousel.style.transform = `translateX(-${cardWidth}px)`;
+
+        setTimeout(() => {
+            carousel.style.transition = "transform 0.4s ease-in-out";
+            carousel.style.transform = "translateX(0)";
+        }, 20);
+    });
+});
+
+
