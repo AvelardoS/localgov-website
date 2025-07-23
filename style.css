@@ -35,7 +35,7 @@ body {
     padding: 0 20px;  
 }
 
-.section-title {
+.section-title, .subtitle {
     text-align: center;
     position: relative;
     padding-bottom: 1rem;
@@ -345,11 +345,12 @@ a {
     border-radius: 1.1rem;
 }
 
+
 .card span {
     font-size: 22px;
     margin-bottom: 0.5rem;
     color: var(--dark-text);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .card p {
@@ -415,10 +416,11 @@ a {
     gap: 0.5rem;
 }
 
-/* .card ul i {
-    color: var(--secondary-color);
+.card ul a {
+    text-decoration: underline;
+    color: var(--accent-color);
     margin-bottom: 1rem;
-} */
+}
 
 .fahouse {
     color: #003366;
@@ -435,14 +437,7 @@ a {
     margin-bottom: 1rem;
 }
 
-.card ul a {
-    text-decoration: underline;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
-}
-
 /* Announcement */
-
 .announcements {
     background-color: var(--light-bg);
     text-align: center;
@@ -460,7 +455,8 @@ a {
 
 .announcements .subtitle {
     color: var(--dark-text-secondary);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    font-size: 15px;
 }
 
 /* .announcements .container {
@@ -539,6 +535,7 @@ a {
     background-color: var(--primary-color);
     color: var(--light-text);
     padding: 0.75rem 1.5rem;
+    font-size: 15px;
     font-weight: 600;
     border-radius: 0.5rem;
     text-decoration: none;
@@ -566,7 +563,8 @@ a {
 
 .calendar .subtitle {
     color: var(--dark-text-secondary);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    font-size: 15px;
 }
 
 /* .calendar-section .container {
@@ -655,7 +653,8 @@ a {
 
 .services .subtitle {
     color: var(--dark-text-secondary);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    font-size: 15px;
 }
 
 .services .container {
@@ -750,6 +749,7 @@ a {
 .officials .subtitle {
     color: var(--dark-text-secondary);
     margin-bottom: 2rem;
+    font-size: 15px;
 }
 
 .officials-wrapper {
@@ -923,7 +923,8 @@ a {
 
 .contacts .subtitle {
     color: var(--dark-text-secondary);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    font-size: 15px;
 }
 
 .contact-container {
@@ -1023,6 +1024,12 @@ a {
 .info-item p {
     margin-top: 0.5rem;
     color: var(--dark-text-secondary);
+}
+
+.info-item a {
+    margin-top: 0.5rem;
+    color: var(--accent-color);
+    text-decoration: underline;
 }
 
 .contact-socials p {
@@ -1174,7 +1181,7 @@ a {
 @media (max-width: 990px) {
     .hero-section {
         padding: 5rem 0;
-        height: 60vh;
+        height: 66vh;
         width: 100%;
         text-align: left;
     }
@@ -1202,7 +1209,7 @@ a {
     }
 
     .custom-shape-divider-bottom-1752830798 svg {
-        height: 5.5rem;
+        height: 6rem;
         width: 120%;
     }
 }
@@ -1210,26 +1217,16 @@ a {
 @media (max-width: 575px) {
     .hero-section {
         padding: 3rem 0;
-        height: 52vh;
+        height: 66vh;
         width: 100%;
         text-align: center;
-    }
-
-    .hero-content h1 {
-        font-size: 35px;
-    }
-
-    .hero-content p {
-        text-align: center;
-        font-size: 15px;
-        max-width: 32rem;
     }
 
     .hero-buttons {
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
-        margin-top: 1.5rem;
+        margin-top: 2rem;
     }
 
     .btn {
@@ -1238,7 +1235,7 @@ a {
     }
 
     .custom-shape-divider-bottom-1752830798 svg {
-        height: 3rem;
+        height: 3.5rem;
     }
 }
 
@@ -1296,7 +1293,7 @@ a {
     }
 
     .card span {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .card ul a {
@@ -1318,6 +1315,101 @@ a {
         margin-top: 0.5rem;
     }
 }
+
+/* Announcement */
+@media (max-width: 990px) {
+    .announcements {
+        padding: 2.5rem 1rem;
+    }
+
+    .announcements h2 {
+        font-size: 28px;
+    }
+
+    .announcements .subtitle {
+        font-size: 14px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .announcement-cards {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .announcement-cards .card-bar {
+        flex: 0 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem)
+    }
+
+    .announcement-cards .card-bar:nth-child(n + 3) {
+        display: none;
+    }
+
+    .card-header {
+        font-size: 14px;
+    }
+
+    .card-body h3 {
+        font-size: 18px;
+    }
+
+    .card-body p {
+        font-size: 14px;
+    }
+
+    .card-body a {
+        font-size: 12px;
+    }
+
+    .view-all {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .announcements {
+        padding: 1.5rem 1rem;
+    }
+
+    .announcements h2 {
+        font-size: 26px;
+    }
+
+    .announcements .subtitle {
+        font-size: 13px;
+        margin-bottom: 1rem;
+    }
+
+    .announcement-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .announcement-cards .card-bar {
+        max-width: 100%;
+    }
+
+    .announcement-cards .card-bar:nth-child(n + 2) {
+        display: none;
+    }
+
+    .card-header {
+        gap: 0.5rem;
+    }
+
+    .view-all {
+        margin-top: 1.5rem;
+    }
+
+    .btn-view-all {
+        padding: 0.8rem 1.2rem;
+        font-size: 13px;
+    }
+}
+
+
 
 
 
