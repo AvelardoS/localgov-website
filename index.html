@@ -30,7 +30,12 @@
                     <p class="city-name">Batangas City</p>
                 </div>
             </div>
-            <nav class="nav-bar">
+            <div class="nav-header" id="navHeader">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-bar" id="navMenu">
                 <ul class ="nav-links">
                     <li class="nav-drop">
                         <a href="#home">Home</a>
@@ -59,7 +64,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Welcome to Barangay <br>Tinga Labak</h1>
-                <p>A progressive community, committed to sincere service and <br>uplifting every resident through good governance.</p>
+                <p>A progressive community, committed to sincere service and uplifting every resident through good governance.</p>
                 <div class="hero-buttons">
                     <a href="#srvcs" class="btn btn-primary">Our Services <i class="fa-solid fa-arrow-right-long arrow"></i></a>
                     <a href="#cntctus" class="btn btn-secondary">Contact Us</i></a>
@@ -73,60 +78,56 @@
         </div>
     </main>
 
-    <section class="quick-links">
-        <div class="container">
-            <div class="card sms">
-                <div class="icon">
-                    <i class="fa-solid fa-bell"></i>
-                    <span>SMS Notifications</span>
+        <div class="quick-links">
+            <div class="container">
+                <div class="card sms">
+                    <div class="icon-links">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>SMS Notifications</span>
+                    </div>
+                        <p>Stay updated with important announcements through our SMS notification system.</p>
+                    <div class="subscribe">
+                        <input type="text" placeholder="Enter your mobile number">
+                        <button>Subscribe!</button>
+                    </div>
                 </div>
-                    <p>Stay updated with important 
-                        <br>announcements through our SMS 
-                        <br>notification system.
-                    </p>
-                <div class="subscribe">
-                    <input type="text" placeholder="Enter your mobile number">
-                    <button>Subscribe!</button>
-                </div>
-            </div>
 
-            <div class="card disclosure">
-                <div class="icon">
-                    <i class="fa-solid fa-clipboard-list"></i>
-                    <span>Disclosure Board</span>
+                <div class="card disclosure">
+                    <div class="icon-links">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>Disclosure Board</span>
+                    </div>
+                        <p>View public records such as financial reports, resolutions, and other official documents issued by the barangay.</p>
+                    <button class="btn-blue">View Documents</button>
                 </div>
-                    <p>View public records such as 
-                        <br>financial reports, resolutions, and other 
-                        <br>official documents issued by the barangay.
-                    </p>
-                <button class="btn-blue">View Documents</button>
-            </div>
 
-            <div class="card emergency">
-                <div class="icon">
-                    <i class="fa-solid fa-phone-flip"></i>
-                    <span>Emergency Hotlines</span>
+                <div class="card emergency">
+                    <div class="icon-links">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <span>Emergency Hotlines</span>
+                    </div>
+                    <div class="emergency-hotlines">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-landmark fahouse"></i>
+                                <p>Barangay-Hall: </p>
+                                <a href="tel:+1211122121">+12 111 22 121</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-truck-medical famed"></i>
+                                <p>Ambulance: </p>
+                                <a href="tel:+1222233232">+12 222 33 232</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-fire fafire"></i>
+                                <p>Fire Dept: </p>
+                                <a href="tel:+1233344343">+12 333 44 343</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-landmark fahouse"></i>
-                        <p>Barangay-Hall: </p>
-                        <a href="tel:+1211122121">+12 111 22 121</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-truck-medical famed"></i>
-                        <p>Ambulance: </p>
-                        <a href="tel:+1222233232">+12 222 33 232</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-fire fafire"></i>
-                        <p>Fire Dept: </p>
-                        <a href="tel:+1233344343">+12 333 44 343</a>
-                    </li>
-                </ul>
             </div>
         </div>
-    </section>
 
     <section id="announcements"   class="announcements">
         <h2 class="section-title">Latest Announcements</h2>

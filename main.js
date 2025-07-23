@@ -109,4 +109,12 @@
     });
 });
 
+// Navigation Menu Toggle
+    const navHeader = document.getElementById('navHeader');
+    const navMenu = document.getElementById('navMenu');
+
+    navHeader.addEventListener('click', () => {
+        navHeader.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
 
