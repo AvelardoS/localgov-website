@@ -1,5 +1,4 @@
 // Smooth Scroll
-
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const target = document.querySelector(this.getAttribute('href'));
@@ -78,36 +77,26 @@
 
         generateCalendar(currentDate);
 
-// Officials Pagination
-    document.addEventListener("DOMContentLoaded", () => {
-        const carousel = document.querySelector(".officials-carousel");
-        const cardWidth = document.querySelector(".official-card").offsetWidth + 16;
+// Officials Scrolls
+    window.addEventListener("load", () => {
+            const track = document.getElementById("marqueeTrack");
+            const cards = Array.from(track.children);
 
-    document.getElementById("scrollRight").addEventListener("click", () => {
-        carousel.style.transition = "transform 0.4s ease-in-out";
-        carousel.style.transform = `translateX(-${cardWidth}px)`;
+            const clonedCards = cards.map(card => card.cloneNode(true));
+            clonedCards.forEach(clone => track.appendChild(clone));
 
-        setTimeout(() => {
+            const trackWidth = Array.from(track.children).reduce((acc, el) => acc + el.offsetWidth + 32, 0);
+            track.style.animation = `scrollMarquee ${trackWidth / 200}s linear infinite`;
 
-            const firstCard = carousel.children[0];
-            carousel.appendChild(firstCard);
-            carousel.style.transition = "none";
-            carousel.style.transform = "translateX(0)";
-        }, 400);
-    });
+            const styleSheet = document.createElement("style");
+            styleSheet.innerHTML = `
+            @keyframes scrollMarquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-${trackWidth / 2}px); }
+            }`;
 
-    document.getElementById("scrollLeft").addEventListener("click", () => {
-        const lastCard = carousel.lastElementChild;
-        carousel.insertBefore(lastCard, carousel.firstElementChild);
-        carousel.style.transition = "none";
-        carousel.style.transform = `translateX(-${cardWidth}px)`;
-
-        setTimeout(() => {
-            carousel.style.transition = "transform 0.4s ease-in-out";
-            carousel.style.transform = "translateX(0)";
-        }, 20);
-    });
-});
+            document.head.appendChild(styleSheet);
+        });
 
 // Navigation Menu Toggle
     const navHeader = document.getElementById('navHeader');
@@ -118,3 +107,56 @@
         navMenu.classList.toggle('active');
     });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Pagination
+//     document.addEventListener("DOMContentLoaded", () => {
+//     const carousel = document.querySelector(".officials-carousel");
+//     const cardWidth = document.querySelector(".official-card").offsetWidth + 16;
+
+//     carousel.style.transition = "none";
+//     carousel.style.transform = `translateX(-${cardWidth}px)`;
+
+//     const lastCard = carousel.lastElementChild;
+//     carousel.insertBefore(lastCard, carousel.firstElementChild);
+
+//     function slideLeft() {
+//         carousel.style.transition = "transform 0.4s ease-in-out";
+//         carousel.style.transform = `translateX(0px)`;
+
+//         carousel.addEventListener("transitionend", () => {
+//             const last = carousel.lastElementChild;
+//             carousel.insertBefore(last, carousel.firstElementChild);
+//             carousel.style.transition = "none";
+//             carousel.style.transform = `translateX(-${cardWidth}px)`;
+//         }, { once: true });
+//     }
+
+//     function slideRight() {
+//         carousel.style.transition = "transform 0.4s ease-in-out";
+//         carousel.style.transform = `translateX(-${cardWidth * 2}px)`;
+
+//         carousel.addEventListener("transitionend", () => {
+//             const first = carousel.firstElementChild;
+//             carousel.appendChild(first);
+//             carousel.style.transition = "none";
+//             carousel.style.transform = `translateX(-${cardWidth}px)`;
+//         }, { once: true });
+//     }
+
+//     document.getElementById("scrollLeft").addEventListener("click", slideLeft);
+//     document.getElementById("scrollRight").addEventListener("click", slideRight);
+// });
