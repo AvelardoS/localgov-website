@@ -12,6 +12,25 @@
         });
     });
 
+
+
+
+
+    window.addEventListener("scroll", function () {
+        const header = document.querySelector(".header");
+        header.classList.toggle("scrolled", window.scrollY > 50);
+        });
+
+
+
+
+
+
+
+
+
+
+
 // Calendar Functionality
     const monthNames = [
         "January", "February", "March", "April", "May", "June",
@@ -106,6 +125,12 @@
         navHeader.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
+
+// Back to Top
+
+    document.querySelector(".back-to-top").addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        });
 
 
 
