@@ -98,24 +98,24 @@
 
 // Officials Scrolls
     window.addEventListener("load", () => {
-            const track = document.getElementById("marqueeTrack");
-            const cards = Array.from(track.children);
+        const track = document.getElementById("marqueeTrack");
+        const cards = Array.from(track.children);
 
-            const clonedCards = cards.map(card => card.cloneNode(true));
-            clonedCards.forEach(clone => track.appendChild(clone));
+        const clonedCards = cards.map(card => card.cloneNode(true));
+        clonedCards.forEach(clone => track.appendChild(clone));
 
-            const trackWidth = Array.from(track.children).reduce((acc, el) => acc + el.offsetWidth + 32, 0);
-            track.style.animation = `scrollMarquee ${trackWidth / 200}s linear infinite`;
+        const trackWidth = Array.from(track.children).reduce((acc, el) => acc + el.offsetWidth + 32, 0);
+        track.style.animation = `scrollMarquee ${trackWidth / 200}s linear infinite`;
 
-            const styleSheet = document.createElement("style");
-            styleSheet.innerHTML = `
-            @keyframes scrollMarquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-${trackWidth / 2}px); }
-            }`;
+        const styleSheet = document.createElement("style");
+        styleSheet.innerHTML = `
+        @keyframes scrollMarquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-${trackWidth / 2}px); }
+        }`;
 
-            document.head.appendChild(styleSheet);
-        });
+        document.head.appendChild(styleSheet);
+    });
 
 // Navigation Menu Toggle
     const navHeader = document.getElementById('navHeader');
@@ -127,61 +127,6 @@
     });
 
 // Back to Top
-
     document.querySelector(".back-to-top").addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Pagination
-//     document.addEventListener("DOMContentLoaded", () => {
-//     const carousel = document.querySelector(".officials-carousel");
-//     const cardWidth = document.querySelector(".official-card").offsetWidth + 16;
-
-//     carousel.style.transition = "none";
-//     carousel.style.transform = `translateX(-${cardWidth}px)`;
-
-//     const lastCard = carousel.lastElementChild;
-//     carousel.insertBefore(lastCard, carousel.firstElementChild);
-
-//     function slideLeft() {
-//         carousel.style.transition = "transform 0.4s ease-in-out";
-//         carousel.style.transform = `translateX(0px)`;
-
-//         carousel.addEventListener("transitionend", () => {
-//             const last = carousel.lastElementChild;
-//             carousel.insertBefore(last, carousel.firstElementChild);
-//             carousel.style.transition = "none";
-//             carousel.style.transform = `translateX(-${cardWidth}px)`;
-//         }, { once: true });
-//     }
-
-//     function slideRight() {
-//         carousel.style.transition = "transform 0.4s ease-in-out";
-//         carousel.style.transform = `translateX(-${cardWidth * 2}px)`;
-
-//         carousel.addEventListener("transitionend", () => {
-//             const first = carousel.firstElementChild;
-//             carousel.appendChild(first);
-//             carousel.style.transition = "none";
-//             carousel.style.transform = `translateX(-${cardWidth}px)`;
-//         }, { once: true });
-//     }
-
-//     document.getElementById("scrollLeft").addEventListener("click", slideLeft);
-//     document.getElementById("scrollRight").addEventListener("click", slideRight);
-// });
