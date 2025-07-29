@@ -11,7 +11,7 @@
     <body>
             <div class="top-bar">
                 <div class="marquee-container">
-                    <div class="marquee">
+                    <div class="marquee" id="announcementMarquee">
                         <span><i class="fa-solid fa-bullhorn"></i> <strong>Barangay Assembly Notice:</strong> Monday, July 28, 2025, at 9:00 AM, Barangay Hall Covered Court. </span>
                         <span><i class="fa-solid fa-circle-info"></i> <strong>Barangay Clean-Up Drive:</strong> Saturday, July 26, 2025, at 7:00 AM, Tingga Labak Plaza.</span>
                         <span><i class="fa-solid fa-triangle-exclamation"></i> Road 4 repairs ongoing until July 20. Use alternate routes.</span>
@@ -64,8 +64,8 @@
                     <h1>Welcome to Barangay <br>Tinga Labak</h1>
                     <p>The proud and thriving heart of Batangas City — join us as we move forward, together as one barangay.</p>
                     <div class="hero-buttons">
-                        <a href="#srvcs" class="btn btn-primary">Our Services <i class="fa-solid fa-arrow-right-long arrow"></i></a>
-                        <a href="#cntctus" class="btn btn-secondary">Contact Us</i></a>
+                        <a href="#services" class="btn btn-primary">Our Services <i class="fa-solid fa-arrow-right-long arrow"></i></a>
+                        <a href="#cntctus" class="btn btn-secondary">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -83,9 +83,9 @@
                             <i class="fa-solid fa-bell"></i>
                             <span>SMS Notifications</span>
                         </div>
-                            <p>Stay updated with important announcements through our SMS notification system.</p>
+                            <p>Get important announcements and updates straight to your phone through our official SMS notification service.</p>
                         <div class="subscribe">
-                            <input type="text" id="number" name="number" placeholder="Enter your mobile number">
+                            <input type="tel" id="number" name="number" placeholder="Enter your mobile number">
                             <button>Subscribe!</button>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                             <i class="fa-solid fa-clipboard-list"></i>
                             <span>Disclosure Board</span>
                         </div>
-                            <p>View public records such as financial reports, resolutions, and other official documents issued by the barangay.</p>
+                        <p>View public records such as financial reports, resolutions, and other official documents issued by the barangay.</p>
                         <button class="btn-blue">View Documents</button>
                     </div>
 
@@ -272,7 +272,7 @@
             </div>
         </section>
 
-        <section id="officials" class="officials-section">
+        <section id="officials" class="officials">
             <h2 class="section-title">Barangay Officials</h2>
             <p class="subtitle">Meet the dedicated leaders serving our community</p>
 

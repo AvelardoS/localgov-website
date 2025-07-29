@@ -12,25 +12,6 @@
         });
     });
 
-
-
-
-
-    window.addEventListener("scroll", function () {
-        const header = document.querySelector(".header");
-        header.classList.toggle("scrolled", window.scrollY > 50);
-        });
-
-
-
-
-
-
-
-
-
-
-
 // Calendar Functionality
     const monthNames = [
         "January", "February", "March", "April", "May", "June",
@@ -115,6 +96,29 @@
         }`;
 
         document.head.appendChild(styleSheet);
+    });
+
+// Announcement Scrolls
+    window.addEventListener("load", () => {
+        const marquee = document.getElementById("announcementMarquee");
+        const messages = Array.from(marquee.children);
+
+        const clones = messages.map(msg => msg.cloneNode(true));
+        clones.forEach(clone => marquee.appendChild(clone));
+
+        const totalWidth = Array.from(marquee.children)
+        .reduce((acc, el) => acc + el.offsetWidth + 48, 0);
+
+        marquee.style.animation = `scrollAnnouncement ${totalWidth / 100}px linear infinite`;
+
+        const style = document.createElement("style");
+        style.innerHTML = `
+        @keyframes scrollAnnouncement {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-${totalWidth / 2}px); }
+        }`;
+
+        document.head.appendChild(style);
     });
 
 // Navigation Menu Toggle
