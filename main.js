@@ -96,7 +96,19 @@
         }`;
 
         document.head.appendChild(styleSheet);
-    });
+        
+        track.addEventListener("mousedown", () => {
+            track.style.animationPlayState = "paused";
+            });
+
+        track.addEventListener("mouseup", () => {
+            track.style.animationPlayState = "running";
+            });
+
+        track.addEventListener("mouseleave", () => {
+            track.style.animationPlayState = "running";
+            });
+        });
 
 // Announcement Scrolls
     window.addEventListener("load", () => {
