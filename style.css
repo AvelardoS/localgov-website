@@ -22,8 +22,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Lexend", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
 }
 
 body {
@@ -194,6 +192,10 @@ a {
     height: 0.1rem;
     background-color: var(--accent-color);
     transition: var(--transition);
+}
+
+.nav-overlay {
+    display: none;
 }
 
 .nav-links a:hover::after {
@@ -1261,14 +1263,21 @@ a {
     }
 
     .nav-bar {
-        margin-top: 2rem;
-        width: 100%;
-        display: none;
+        position: fixed;
+        top: 0;
+        left: -15rem; 
+        width: 15rem;
+        height: 100vh;
+        background: linear-gradient(to right, rgba(14, 30, 54, 0.95), rgba(47, 142, 224, 0.9));
+        padding: 2rem 1.5rem;
+        border-right: 2px solid var(--border-color);
         flex-direction: column;
+        transition: left 0.3s ease-in-out;
+        z-index: 1002;
     }
 
     .nav-bar.active {
-        display: flex;
+        left: 0;
     }
 
     .header-logo i {
@@ -1286,12 +1295,23 @@ a {
     .nav-links {
         flex-direction: column;
         width: 100%;
-        gap: 1rem;
+        gap: 3.2rem;
     }
 
     .nav-links a {
-        padding: 0.5rem 0;
-        font-size: 16px;
+        font-size: 18px;
+    }
+
+    .nav-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: none;
+        z-index: 1001;
+    }
+
+    .nav-overlay.active {
+        display: block;
     }
 }
 

@@ -96,7 +96,7 @@
         }`;
 
         document.head.appendChild(styleSheet);
-        
+
         track.addEventListener("mousedown", () => {
             track.style.animationPlayState = "paused";
             });
@@ -107,8 +107,8 @@
 
         track.addEventListener("mouseleave", () => {
             track.style.animationPlayState = "running";
-            });
         });
+    });
 
 // Announcement Scrolls
     window.addEventListener("load", () => {
@@ -134,12 +134,31 @@
     });
 
 // Navigation Menu Toggle
-    const navHeader = document.getElementById('navHeader');
-    const navMenu = document.getElementById('navMenu');
+    document.addEventListener("DOMContentLoaded", () => {
+        const navHeader = document.getElementById("navHeader");
+        const navMenu = document.getElementById("navMenu");
+        const navOverlay = document.getElementById("navOverlay");
+        const navLinks = document.querySelectorAll(".nav-links a");
 
-    navHeader.addEventListener('click', () => {
-        navHeader.classList.toggle('active');
-        navMenu.classList.toggle('active');
+        navHeader.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+            navOverlay.classList.toggle("active");
+            navHeader.classList.toggle("active");
+            });
+
+        navOverlay.addEventListener("click", () => {
+            navMenu.classList.remove("active");
+            navOverlay.classList.remove("active");
+            navHeader.classList.remove("active");
+            });
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+            navMenu.classList.remove("active");
+            navOverlay.classList.remove("active");
+            navHeader.classList.remove("active");
+            });
+        });
     });
 
 // Back to Top
