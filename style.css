@@ -121,10 +121,17 @@ a {
     gap: 0.6rem;
 }
 
+/* Logo icon style (used when icon is selected as logo) */
 .header-logo i {
     font-size: 28px;
     color: var(--light-text);
 }
+
+/* Image logo style (use this if you replace the icon with an image) */
+/* .Image[class-name] {
+    max-width: 100px;
+    height: auto;
+} */
 
 .logo-text {
     display: flex;
@@ -224,10 +231,28 @@ a {
     height: 76vh;
 }
 
+/* Background image layer */
+/* .Image[class-name] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.Image[class-name] img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
 .hero .container {
+    /* position: relative; */ /* Keep content above image */
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    /* z-index: 1; */ /* Keep content above image */
 }
 
 .hero-content {
@@ -1136,10 +1161,17 @@ a {
     gap: 0.6rem;
 }
 
+/* Logo icon style (used when icon is selected as logo) */
 .footer-logo i {
     font-size: 28px;
     color: var(--light-text);
 }
+
+/* Image logo style (use this if you replace the icon with an image) */
+/* .Image[class-name] {
+    max-width: 100px;
+    height: auto;
+} */
 
 .footer-name {
     display: flex;
