@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barangay Tinga Labak</title>
+    <title>Barangay Tinga Labak</title> <!-- Replace with your barangay's name or website title -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/site-icon.svg"> <!-- Replace with your own site icon. Use the structure below and remove the alternate icon link if you do not have a .ico file. -->
+    <link rel="alternate icon" href="assets/icons/favicon.ico"> <!-- Replace with your own .ico file if you have one, or remove this line if you do not have a .ico file. -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Provides icon library used throughout the website. Keep this link or replace with your preferred icon library if needed -->
     
 </head>
     <body>
             <div class="top-bar">
                 <div class="marquee-container">
                     <div class="marquee" id="announcementMarquee">
+                        <!-- Customize event details (name, date, time, location) or duplicate this line to add more announcements -->
                         <span><i class="fa-solid fa-bullhorn"></i> <strong>Barangay Assembly Notice:</strong> Monday, July 28, 2025, at 9:00 AM, Barangay Hall Covered Court. </span>
                         <span><i class="fa-solid fa-circle-info"></i> <strong>Barangay Clean-Up Drive:</strong> Saturday, July 26, 2025, at 7:00 AM, Tingga Labak Plaza.</span>
                         <span><i class="fa-solid fa-triangle-exclamation"></i> Road 4 repairs ongoing until July 20. Use alternate routes.</span>
@@ -22,19 +25,22 @@
         <header class="header">
             <div class="container">
                 <div class="header-logo">
-                    <i class="fa-solid fa-landmark"></i>
+                    <i class="fa-solid fa-landmark"></i> <!-- Change this to your barangay logo by replacing the icon with an image. Use the structure below and remove the icon when switching. -->
+                    <!-- <div class="[class-name]">
+                        <img src="[path-to-image.jpg]" alt="[Image description]">
+                    </div> -->
                     <div class="logo-text">
                         <span class="brgy-name">Barangay Tinga Labak</span>
                         <p class="city-name">Batangas City</p>
                     </div>
                 </div>
-                <div class="nav-header" id="navHeader">
+                <div class="nav-header" id="navHeader"> <!-- Mobile menu toggle button (hamburger icon). Do not modify unless changing navigation behavior -->
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 <nav class="nav-bar" id="navMenu">
-                    <ul class ="nav-links">
+                    <ul class ="nav-links"> <!-- Customize navigation links: add, remove, or modify <li> items as needed -->
                         <li class="nav-drop">
                             <a href="#homepage">Home</a>
                         </li>
@@ -55,22 +61,26 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="nav-overlay" id="navOverlay"></div>
+                <div class="nav-overlay" id="navOverlay"></div> <!-- Navigation overlay (mobile menu background click-to-close). Do not modify unless changing mobile navigation behavior -->
             </div>
         </header>
 
         <main id="homepage" class="hero">
+            <!-- Use the structure below if you want an image instead of solid color background -->
+            <!-- <div class="[class-name]">
+                <img src="[path-to-image.jpg]" alt="[Image description]">
+            </div> -->
             <div class="container">
                 <div class="hero-content">
                     <h1>Welcome to Barangay <br>Tinga Labak</h1>
-                    <p>The proud and thriving heart of Batangas City — join us as we move forward, together as one barangay.</p>
+                    <p>The proud and thriving heart of Batangas City — join us as we move forward, together as one barangay.</p> <!-- Short introduction or tagline of the barangay. Customize this text to match your local identity -->
                     <div class="hero-buttons">
                         <a href="#services" class="btn btn-primary">Our Services <i class="fa-solid fa-arrow-right-long arrow"></i></a>
                         <a href="#cntctus" class="btn btn-secondary">Contact Us</a>
                     </div>
                 </div>
             </div>
-            <div class="custom-shape-divider-bottom-1752830798">
+            <div class="custom-shape-divider-bottom-1752830798"> <!-- Decorative SVG shape divider (used for smooth section transition at the bottom of hero), keep this or replace/remove if you prefer a simpler layout -->
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
                 </svg>
@@ -79,7 +89,7 @@
 
             <div class="quick-links">
                 <div class="container">
-                    <div class="card sms">
+                    <div class="card sms"> <!-- Remove this card if you do not have an SMS notification service.  -->
                         <div class="icon-links">
                             <i class="fa-solid fa-bell"></i>
                             <span>SMS Notifications</span>
@@ -96,7 +106,7 @@
                             <i class="fa-solid fa-clipboard-list"></i>
                             <span>Disclosure Board</span>
                         </div>
-                        <p>View public records such as financial reports, resolutions, and other official documents issued by the barangay.</p>
+                        <p>View public records such as financial reports, resolutions, and other official documents issued by the barangay.</p> <!-- Brief explanation of available public records (e.g., financial reports, resolutions). Replace with your own barangay disclosure information -->
                         <button class="btn-blue">View Documents</button>
                     </div>
 
@@ -110,17 +120,17 @@
                                 <li>
                                     <i class="fa-solid fa-landmark fahouse"></i>
                                     <p>Barangay-Hall: </p>
-                                    <a href="tel:+1211122121">+12 111 22 121</a>
+                                    <a href="tel:+1211122121">+12 111 22 121</a> <!-- This number is fictional for template use only. Replace with your official local emergency hotline number -->
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-truck-medical famed"></i>
                                     <p>Ambulance: </p>
-                                    <a href="tel:+1222233232">+12 222 33 232</a>
+                                    <a href="tel:+1222233232">+12 222 33 232</a> <!-- This number is fictional for template use only. Replace with your official local emergency hotline number -->
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-fire fafire"></i>
                                     <p>Fire Dept: </p>
-                                    <a href="tel:+1233344343">+12 333 44 343</a>
+                                    <a href="tel:+1233344343">+12 333 44 343</a> <!-- This number is fictional for template use only. Replace with your official local emergency hotline number -->
                                 </li>
                             </ul>
                         </div>
@@ -130,10 +140,10 @@
 
         <article id="announcements"   class="announcements">
             <h2 class="section-title">Latest Announcements</h2>
-            <p class="subtitle">Stay updated with the latest news and announcements from our barangay</p>
+            <p class="subtitle">Stay updated with the latest news and announcements from our barangay</p> <!-- Subtitle text: replace with your own barangay announcement description or tagline -->
 
             <div class="container">
-                <div class="announcement-cards">
+                <div class="announcement-cards"> <!-- Customize the announcement cards: duplicate the structure to add more, remove if not needed, or update the content as necessary. -->
                     <div class="card-bar">
                         <div class="card-header">
                             <span>Community Announcement</span>
@@ -191,8 +201,9 @@
 
         <section id="events" class="calendar">
             <h2 class="section-title">Upcoming Events</h2>
-            <p class="subtitle">Stay informed about upcoming events and activities in our barangay</p>
+            <p class="subtitle">Stay informed about upcoming events and activities in our barangay</p> <!-- Subtitle text: replace with your own barangay announcement description or tagline -->
 
+            <!-- Events are displayed on their exact corresponding dates within the calendar. Add or update events to match the correct date placement -->
             <div class="container">
                 <div class="calendar-container">
                     <div class="calendar-header">
@@ -225,8 +236,9 @@
 
         <section id="services"  class="services">
             <h2 class="section-title">Our Services</h2>
-            <p class="subtitle">Explore the various services offered by our barangay</p>
+            <p class="subtitle">Explore the various services offered by our barangay</p> <!-- Subtitle text: replace with your own barangay announcement description or tagline -->
 
+            <!-- Customize the service cards: duplicate the structure to add more, remove if not needed, or update based on your barangay services and offerings -->
             <div class="container">
                 <div class="service-card">
                     <div class="card-box">
@@ -275,8 +287,9 @@
 
         <section id="officials" class="officials">
             <h2 class="section-title">Barangay Officials</h2>
-            <p class="subtitle">Meet the dedicated leaders serving our community</p>
+            <p class="subtitle">Meet the dedicated leaders serving our community</p> <!-- Subtitle text: replace with your own barangay announcement description or tagline -->
 
+            <!-- Customize the official cards: duplicate the structure to add more, remove any unnecessary positions or if not needed, or update entries depending on the current list of active officials -->
                 <div class="container">
                     <div class="officials-container">
                         <div class="officials-scroll">
@@ -285,26 +298,26 @@
                                 <div class="official-card">
                                     <div class="official-image"><i class="fas fa-user"></i></div>
                                     <div class="off-card-content">
-                                        <h3>Monkey D. Luffy</h3>
-                                        <p class="position">Barangay Captain -</p>
-                                        <p class="duty">Youth and Sports Development</p>
-                                        <p class="since">Serving since 2020</p>
+                                        <h3>Monkey D. Luffy</h3> <!-- replace with official's name -->
+                                        <p class="position">Barangay Captain -</p> <!-- replace with official's position -->
+                                        <p class="duty">Youth and Sports Development</p> <!-- replace with official's duty or committee assignment -->
+                                        <p class="since">Serving since 2020</p> <!-- replace with the year the official started serving in their current position -->
                                     </div>
                                     <div class="social-icons">
                                         <button class="icons-click">
-                                            <a href="#">
+                                            <a href="#"> <!-- Use this structure to link to the official's Facebook account. Replace the href="#" with the actual URL to their profile, or remove the button if they do not have a social media presence. -->
                                                 <i class="fa-brands fa-facebook-f"></i>
                                                 <span class="off-label fb">Facebook</span>
                                             </a>
                                         </button>
                                         <button class="icons-click">
-                                            <a href="#">
+                                            <a href="#"> <!-- Use this structure to link to the official's Instagram account. Replace the href="#" with the actual URL to their profile, or remove the button if they do not have a social media presence. -->
                                                 <i class="fa-brands fa-instagram"></i>
                                                 <span class="off-label ig">Instagram</span>
                                             </a>
                                         </button>
                                         <button class="icons-click">
-                                            <a href="#">
+                                            <a href="#"> <!-- Use this structure to link to the official's direct messages. Replace the href="#" with the actual URL, or remove the button if they do not have a social media presence. -->
                                                 <i class="fa-solid fa-envelope"></i>
                                                 <span class="off-label msg">Messenger</span>
                                             </a>
@@ -573,7 +586,7 @@
 
         <section id="cntctus"  class="contacts">
             <h2 class="section-title">Contact Us</h2>
-            <p class="subtitle">Get in touch with our barangay office</p>
+            <p class="subtitle">Get in touch with our barangay office</p> <!-- Subtitle text: replace with your own barangay announcement description or tagline -->
 
             <div class="container">
                 <div class="contact-container">
@@ -602,7 +615,7 @@
                         <div class="info-item">
                             <i class="fa-solid fa-location-dot"></i>
                             <div>
-                                <strong>Address</strong>
+                                <strong>Address</strong> <!-- Replace the address below with your barangay's official address. You can also include additional location details or landmarks to help residents find the office more easily. -->
                                 <p>Road 4, Barangay Tingga Labak, Batangas City, Philippines</p>
                             </div>
                         </div>
@@ -610,23 +623,23 @@
                         <div class="info-item">
                             <i class="fa-solid fa-phone"></i>
                             <div>
-                                <strong>Phone</strong>
-                                <a href="tel:+63 (43) 123-4567">+63 (43) 123-4567</a>
+                                <strong>Phone</strong> <!-- Replace the phone number below with your barangay's official contact number. You can also include additional numbers for different departments or services if necessary. -->
+                                <a href="tel:+63 (43) 123-4567">+63 (43) 123-4567</a> <!-- Replace this fictional number with the official barangay hotline number -->
                             </div>
                         </div>
 
                         <div class="info-item">
                             <i class="fa-solid fa-envelope"></i>
                             <div>
-                                <strong>Email</strong>
-                                <a href="mailto:info@brgy-tingalabak.gov.ph">info@brgy-tingalabak.gov.ph</a>
+                                <strong>Email</strong> <!-- Replace the email address below with your barangay's official email. -->
+                                <a href="mailto:info@brgy-tingalabak.gov.ph">info@brgy-tingalabak.gov.ph</a> <!-- Replace this fictional email with the official barangay email address -->
                             </div>
                         </div>
 
                         <div class="info-item">
                             <i class="fa-solid fa-clock"></i>
                             <div>
-                                <strong>Office Hours</strong>
+                                <strong>Office Hours</strong> <!-- Replace the office hours below with your barangay's official working hours. You can also include any special hours. -->
                                 <p>Monday to Friday: 8:00 AM - 5:00 PM / <br>Saturday: 8:00 AM - 12:00 PM</p>
                             </div>
                         </div>
@@ -635,25 +648,25 @@
                             <p>Follow Us</p>
                             <div class="contact-icons">
                                 <button class="contact-click">
-                                    <a href="#">
+                                    <a href="#"> <!-- Use this structure to link to the official's Facebook account. Replace the href="#" with the actual URL to their profile, or remove the button if they do not have a social media presence. -->
                                         <i class="fa-brands fa-facebook-f"></i>
                                         <span class="contact-label fbs">Facebook</span>
                                     </a>
                                 </button>
                                 <button class="contact-click">
-                                    <a href="#">
+                                    <a href="#"> <!-- Use this structure to link to the official's Instagram account. Replace the href="#" with the actual URL to their profile, or remove the button if they do not have a social media presence. -->
                                         <i class="fa-brands fa-instagram"></i>
                                         <span class="contact-label igs">Instagram</span>
                                     </a>
                                 </button>
                                 <button class="contact-click">
-                                    <a href="#">
+                                    <a href="#"> <!-- Use this structure to link to the official's Twitter/X account. Replace the href="#" with the actual URL to their profile, or remove the button if they do not have a social media presence. -->
                                         <i class="fa-brands fa-twitter"></i>
                                         <span class="contact-label twitter">X</span>
                                     </a>
                                 </button>
                                 <button class="contact-click">
-                                    <a href="#">
+                                    <a href="#"> <!-- Use this structure to link to the official's Messenger account. Replace the href="#" with the actual URL to their profile, or remove the button if they do not have a social media presence. -->
                                         <i class="fa-solid fa-envelope"></i>
                                         <span class="contact-label msgs">Messenger</span>
                                     </a>
@@ -670,13 +683,16 @@
                 <div class="footer-content">
                     <div class="footer-col">
                         <div class="footer-logo">
-                            <i class="fa-solid fa-landmark"></i>
+                            <i class="fa-solid fa-landmark"></i> <!-- Change this to your barangay logo by replacing the icon with an image. Use the structure below and remove the icon when switching. -->
+                            <!-- <div class="[class-name]">
+                                <img src="[path-to-image.jpg]" alt="[Image description]">
+                            </div> -->
                             <div class="footer-name">
                                 <span class="brgy-name2">Barangay Tinga Labak</span>
                                 <p class="city-name2">Batangas City</p>
                             </div>
                         </div>
-                        <p class="footer-description">A progressive community, committed to sincere service and uplifting every resident through good governance.</p>
+                        <p class="footer-description">A progressive community, committed to sincere service and uplifting every resident through good governance.</p> <!-- Short statement about the barangay’s mission or values. Replace with your own message or community description -->
                         <div class="footer-socials">
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                             <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -686,7 +702,7 @@
                     </div>
 
                     <div class="footer-col">
-                        <h3>Quick Links</h3>
+                        <h3>Quick Links</h3> <!-- Update these links to match your navigation menu. Add, remove, or modify items as needed -->
                         <ul>
                             <li><a href="#homepage">Homepage</a></li>
                             <li><a href="#about">About</a></li>
@@ -698,7 +714,7 @@
                     </div>
 
                     <div class="footer-col">
-                        <h3>Document Request</h3>
+                        <h3>Document Request</h3> <!-- Replace with your own document request links or services -->
                         <ul>
                             <li><a href="#">Business Permits</a></li>
                             <li><a href="#">Cedula</a></li>
@@ -709,7 +725,7 @@
                     </div>
 
                     <div class="footer-col">
-                        <h3>Legal</h3>
+                        <h3>Legal</h3> <!-- Replace with your own legal links or policies -->
                         <ul>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Terms of Services</a></li>
@@ -719,7 +735,7 @@
                 </div>
             </div>
 
-            <div class="footer-bottom">
+            <div class="footer-bottom"> 
                 <p>Copyright<i class="fa-regular fa-copyright"></i>2024, Barangay Tinga Labak - <a href="#">Privacy</a>  |  <a href="#">Terms of Service</a>.</p>
             </div>
         </footer>
