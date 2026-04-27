@@ -86,11 +86,11 @@
         clonedCards.forEach(clone => track.appendChild(clone));
 
         const trackWidth = Array.from(track.children).reduce((acc, el) => acc + el.offsetWidth + 32, 0);
-        track.style.animation = `scrollMarquee ${trackWidth / 200}s linear infinite`;
+        track.style.animation = `scrollMarquee2 ${trackWidth / 200}s linear infinite`;
 
         const styleSheet = document.createElement("style");
         styleSheet.innerHTML = `
-        @keyframes scrollMarquee {
+        @keyframes scrollMarquee2 {
         0% { transform: translateX(0); }
         100% { transform: translateX(-${trackWidth / 2}px); }
         }`;
@@ -121,11 +121,11 @@
         const totalWidth = Array.from(marquee.children)
         .reduce((acc, el) => acc + el.offsetWidth + 48, 0);
 
-        marquee.style.animation = `scrollAnnouncement ${totalWidth / 100}px linear infinite`;
+        marquee.style.animation = `scrollMarquee ${totalWidth / 100}px linear infinite`;
 
         const style = document.createElement("style");
         style.innerHTML = `
-        @keyframes scrollAnnouncement {
+        @keyframes scrollMarquee {
         0% { transform: translateX(0); }
         100% { transform: translateX(-${totalWidth / 2}px); }
         }`;
